@@ -1,7 +1,7 @@
 # Twtapi — Official .NET client for [twtapi.io](https://twtapi.io)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Release](https://img.shields.io/github/v/release/twtapi-io/twtapi-csharp?display_name=tag)](https://github.com/twtapi-io/twtapi-csharp/releases)
+[![Release](https://img.shields.io/github/v/release/twtapi-io/twtapi-csharp?display_name=tag&color=blue)](https://github.com/twtapi-io/twtapi-csharp/releases)
 
 `Twtapi` is the official .NET client SDK for the
 [twtapi.io](https://twtapi.io) HTTP API — a JSON API that exposes 𝕏
@@ -18,34 +18,21 @@ and more.
 
 ## Install
 
-Grab the binaries from the latest
-[GitHub Release](https://github.com/twtapi-io/twtapi-csharp/releases/latest).
+Download `Twtapi.dll` and `Twtapi.xml` from the latest
+[GitHub Release](https://github.com/twtapi-io/twtapi-csharp/releases/latest)
+and drop them into a `lib/` folder in your project. Then add this to your
+`.csproj`:
 
-**Option 1 — reference the DLL directly.** Download `Twtapi.dll` and
-`Twtapi.xml` (the XML next to the DLL gives you IntelliSense), drop
-both into a `lib/` folder in your project, and add a reference:
-
-```xml
+​```xml
 <ItemGroup>
   <Reference Include="Twtapi">
     <HintPath>lib\Twtapi.dll</HintPath>
   </Reference>
 </ItemGroup>
-```
+​```
 
-**Option 2 — install the `.nupkg` from a local NuGet source.** Download
-`Twtapi.<version>.nupkg`, place it in a folder (e.g. `C:\local-nuget\`),
-register it as a source once:
-
-```bash
-dotnet nuget add source C:\local-nuget --name local
-```
-
-Then in your project:
-
-```bash
-dotnet add package Twtapi
-```
+In Visual Studio / Rider you can also right-click the project → **Add
+Reference → Browse → pick `Twtapi.dll`**.
 
 ## Quickstart
 
