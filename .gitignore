@@ -1,0 +1,35 @@
+# .NET build artifacts
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+artifacts/
+*.user
+*.suo
+
+# Rider / VS / VS Code
+.vs/
+.idea/
+*.sln.docstates
+.vscode/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# Test output
+TestResults/
+coverage*.xml
+*.coverage
+*.coveragexml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local secrets / scratch
+*.env
+.env.local
+secrets.json
+scratch/
